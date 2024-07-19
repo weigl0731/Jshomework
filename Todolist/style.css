@@ -1,0 +1,31 @@
+body {
+  padding: 30px;
+}
+
+.wrapper {
+  border: 1px solid green;
+  height: 1200px;
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  padding-left: 220px;
+}
+
+.btnadd {
+  margin-bottom: 70px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.btn,
+.btn_add {
+  margin-left: 20px;
+}
