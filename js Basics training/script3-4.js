@@ -4,7 +4,6 @@
 
 //  ---------------  B   --------------- ok
 
-
 // let a = 9;
 // let str = "";
 
@@ -22,8 +21,7 @@
 
 // -------------------------------------
 
-//   --------   C  -------  ok 
-
+//   --------   C  -------  ok
 
 // leit str = ""
 // for(let i = 0 ; i <1 ; i++){
@@ -37,41 +35,22 @@
 
 /*   ------------------------------    4.     ----------------------- */
 
-
 // -------------- A   ----------------  ok
 
-let a = []
-
-function ArrayRandom(a) {
-  a = Math.floor(Math.random()*10)
-  return a
-}
-for(let i = 1 ;i<= a.length; i++){
-  a[i] = i+1
-  console.log(ArrayRandom(a[i]));
-}
-
-
-
-
-
-
-
-
-
-// -------------- B   ---------------- 
-
-// let a = [];
-// let b
-// for(let i = 0 ; i <= 5; i++){
-
-//   b = Math.floor(Math.random()*10)
-//   console.log(b);
+// let arr = []; // 宣告
+// for (let i = 0; i < 5; i++) {
+//   arr[i] = Math.trunc(Math.random() * 10); // 設定值
 // }
+// console.log(arr);
 
+// -------------- B   ---------------- ok
 
+let arr = []; // 宣告
+let sum = 0;
+let average = "";
+for (let i = 0; i < 5; i++) {
+  arr[i] = Math.trunc(Math.random() * 10); // 設定值
+  sum += arr[i];
+}
 
-
-
-
-// -------------- C   ---------------- 
+console.log(sum);
