@@ -44,20 +44,27 @@
 // console.log(str);
 
 // ----------- D --------------
-
 let n = 10;
-let a = 1;
 let sum = 0;
-for (let i = 1; i <= n; i++) {
-  for (let j = 2; j <= i; j++) {
-    if (j % 2 == 0) {
-      sum += j;
-    } else if (j % 2 == 1) {
-      break;
-    }
-    console.log(j);
+function isprime(a) {
+  if (a === 1) {
+    return false;
   }
+  for (let i = 2; i < a; i++) {
+    if (a % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
+
+for (let i = 2; i < n; i++) {
+  if (isprime(i)) {
+    sum += i;
+  }
+  console.log(i);
+}
+
 console.log(sum);
 
 // ------------- E -----------------  ok
