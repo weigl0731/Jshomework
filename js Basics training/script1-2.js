@@ -1,74 +1,79 @@
 // 1.
 
-// a.
-console.log(
-  "int " +
-    "while " +
-    "break " +
-    "for " +
-    "if " +
-    "switch " +
-    "else " +
-    "case " +
-    "continue " +
-    "foreach "
-);
-// b. 
+// ------------------------a.----------------------ok
+// console.log(
+//   "int " +
+//     "while " +
+//     "break " +
+//     "for " +
+//     "if " +
+//     "switch " +
+//     "else " +
+//     "case " +
+//     "continue " +
+//     "foreach "
+// );
+// ------------b.-----------------------ok
 
-const pi = 3.14;
+// const pi = 3.14;
 
+// -----------------c.--------------------ok
+// let name1 = "willy";
+// let age = 26;
 
-// c.
-let name1 = "willy";
-let age = 26;
-
-console.log("我的名字叫 " + name1 + " 年紀為 " + age);
-
-
+// console.log("我的名字叫 " + name1 + " 年紀為 " + age);
 
 // 2.
 
-// a. 
-let dayhrsec = 34 * 3600;
-let minuteSsec = 17 * 60 + 36;
-a = dayhrsec + minuteSsec;
+// -----------------------a + b  ---------------------ok
+// let dayhrsec = 24 * 60 * 60;
+// let hoursec = 60 * 60;
+// let minuteSec = 60;
+// let Sec_1 = 36;
+// a = 1 * dayhrsec + 10 * hoursec + 17 * minuteSec + Sec_1;
 
-console.log("1 天又 10 小時又 17 分又 36 秒的秒數等於 = " + a + "秒");
+// console.log("1 天又 10 小時又 17 分又 36 秒的秒數等於 = " + a + "秒");
 
+// let secDay = Math.floor(93784 / dayhrsec);
+// let secHour = Math.floor((93784 % dayhrsec) / hoursec);
+// let secMinute = Math.floor(((93784 % dayhrsec) % hoursec) / minuteSec);
+// let Sec_2 = Math.floor(((93784 % dayhrsec) % hoursec) % minuteSec);
+// console.log(
+//   "93784秒 = " +
+//     secDay +
+//     "天" +
+//     secHour +
+//     "小時" +
+//     secMinute +
+//     "分" +
+//     Sec_2 +
+//     "秒"
+// );
 
-//  b. 
-let secDayahr = parseInt(93784 / 3600) - 24;
+//  -------------------------c.----------------------ok
 
-console.log("93784秒等於幾天幾時幾分幾秒 = " + secDayahr + "天");
+// let havcom = "如果有筆電且有網路，";
+// let homwrok = "就可以在家工作";
 
+// havhomwrok = havcom + homwrok;
 
+// console.log(havhomwrok);
 
-//  c. 
-let havcom = "如果有筆電且有網路，";
-let homwrok = "就可以在家工作";
+//   ---------------------d--------------- ok
 
-let havhomwrok = havcom + homwrok;
+// let openComputer = 1;
+// let openvscode = 2;
+// let writehomework = 3;
 
-console.log(havhomwrok);
+// oneday = openComputer + openvscode + writehomework * 3;
+// twoday = openComputer + openvscode + writehomework * 2;
+// a = oneday + twoday;
 
-//   d . reds寫作業
+// console.log("Reds 2天總共花了 : " + a + "分鐘");
 
-let openComputer = 1;
-let openvscode = 2;
-let writehomework = 3;
+//  e.
 
-oneday = openComputer + openvscode + writehomework * 3;
-twoday = openComputer + openvscode + writehomework * 2;
-a = oneday + twoday;
+let n = 0;
+n = Math.trunc(Math.random());
 
-console.log("Reds 2天總共花了 : " + a + "分鐘");
-
-//  e. 
-
-
-let truint
-truint = Math.trunc(2);
-console.log(truint);
-
-
-
+console.log(n);
