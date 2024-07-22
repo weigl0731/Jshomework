@@ -71,7 +71,7 @@
 
 // console.log("Reds 2天總共花了 : " + a + "分鐘");
 
-//  e. ok
+//  ------------------------e.---------------------- ok
 
 // let n = 10;
 // console.log(Math.trunc(Math.random() * n));

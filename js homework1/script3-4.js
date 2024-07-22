@@ -45,7 +45,66 @@
 
 // ----------- D --------------
 
-// ------------- E -----------------
+let n = 10;
+let a = 1;
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+  for (let j = 2; j <= i; j++) {
+    if (j % 2 == 0) {
+      sum += j;
+    } else if (j % 2 == 1) {
+      break;
+    }
+    console.log(j);
+  }
+}
+console.log(sum);
+
+// ------------- E -----------------  ok
+
+// function getDaysInMonth(year, month) {
+//   if ((year % 4 == 0 && year % 100 !== 0) || year % 400 === 0) {
+//     switch (month) {
+//       case 1:
+//       case 3:
+//       case 5:
+//       case 7:
+//       case 8:
+//       case 10:
+//       case 12:
+//         return 31;
+//       case 4:
+//       case 6:
+//       case 9:
+//       case 11:
+//         return 30;
+//       case 2:
+//         return 29;
+//     }
+//   } else {
+//     switch (month) {
+//       case 1:
+//       case 3:
+//       case 5:
+//       case 7:
+//       case 8:
+//       case 10:
+//       case 12:
+//         return 31;
+//       case 4:
+//       case 6:
+//       case 9:
+//       case 11:
+//         return 30;
+//       case 2:
+//         return 28;
+//     }
+//   }
+// }
+// year = 2023;
+// month = 2;
+// a = getDaysInMonth(year, month);
+// console.log("2023年的2月份有幾天:\t" + a + "天");
 
 /*   ------------------------------    4.     ----------------------- */
 
@@ -136,15 +195,15 @@
 
 // let arr = [];
 // let a = 9;
-// let str = "";
 // for (let i = 0; i <= 8; i++) {
 //   let count = 2;
+//   let arr2 = [];
 //   for (let j = 1; j <= a - 1; j++) {
-//     b = a * count;
-//     str += b;
+//     arr2[j] = a * count;
+
 //     count++;
 //   }
 //   a--;
 // }
-// arr.push([str]);
+// console.log(arr2);
 // console.log(arr);
