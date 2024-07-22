@@ -2,6 +2,16 @@
 
 // a
 
+// let n = 10;
+// let total = 3;
+// let total2 = 4;
+
+// for (let i = 1; i <= n; i++) {
+//   total *= 2;
+//   total2 *= 2;
+// }
+// console.log("3的倍數總和" + total + "\t4的倍數總和" + total2);
+
 //  ---------------  B   --------------- ok
 
 // let a = 9;
@@ -120,21 +130,21 @@
 
 // --------------- E ----------------------
 
-let arr = [];
-let a = 9;
-let str = "";
-for (let i = 0; i <= 8; i++) {
-  let count = 2;
-  for (let j = 1; j <= a - 1; j++) {
-    b = a * count;
-    str += b;
-    count++;
-  }
-  a--;
-  arr.push([str]);
-}
+// let arr = [];
+// let a = 9;
+// let str = "";
+// for (let i = 0; i <= 8; i++) {
+//   let count = 2;
+//   for (let j = 1; j <= a - 1; j++) {
+//     b = a * count;
+//     str += b;
+//     count++;
+//   }
+//   a--;
+// }
+// arr.push([str]);
+// console.log(arr);
 
-console.log(arr);
 // console.log(str);
 
 // for (let i = 1; i <= 8; i++) {

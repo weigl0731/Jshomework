@@ -73,7 +73,5 @@
 
 //  e.
 
-let n = 0;
-n = Math.trunc(Math.random());
-
-console.log(n);
+// let n = 10;
+// console.log(Math.trunc(Math.random() * n));
