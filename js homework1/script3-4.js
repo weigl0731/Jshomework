@@ -44,28 +44,29 @@
 // console.log(str);
 
 // ----------- D --------------
-let n = 10;
-let sum = 0;
-function isprime(a) {
-  if (a === 1) {
-    return false;
-  }
-  for (let i = 2; i < a; i++) {
-    if (a % i === 0) {
-      return false;
-    }
-  }
-  return true;
-}
+// let n = 10;
+// let sum = 0;
 
-for (let i = 2; i < n; i++) {
-  if (isprime(i)) {
-    sum += i;
-  }
-  console.log(i);
-}
+// function isprime(a) {
+//   if (a === 1) {
+//     return false;
+//   }
+//   for (let i = 2; i < a; i++) {
+//     if (a % i === 0) {
+//       return false; // 能整除i所以不是質數
+//     }
+//     return true;
+//   }
+// }
 
-console.log(sum);
+// for (let b = 2; b < n; b++) {
+//   if (isprime(n)) {
+//     sum += b;
+//   }
+//   console.log(b);
+// }
+
+// console.log(sum);
 
 // ------------- E -----------------  ok
 
@@ -157,30 +158,40 @@ console.log(sum);
 
 //  -----------------   C  ---------------------
 
-// let arr = []; // 宣告
-// let sum = 0;
-// let average = 0;
+let arr = []; // 宣告
+let sum = 0;
+let average = 0;
+for (let i = 0; i < 5; i++) {
+  arr[i] = Math.floor(Math.random() * 10);
+  for (let j = 0; j < i; j++) {
+    if (arr[i] == arr[j]) {
+      i--;
+    }
+  }
+}
+for (let a of arr) {
+  sum += a;
+}
+
+console.log(arr); // 排序前
+arr = arr.sort(); //排序後
+console.log(arr);
+average += Math.floor(sum / arr.length);
+console.log("平均數 = " + average);
+if (arr.indexOf(average) !== -1) {
+  console.log(
+    "陣列元素之值等於平均值 = " + "第" + arr.indexOf(average) + "個數"
+  );
+} else if (arr.indexOf(average) == -1) {
+  console.log(arr.length);
+}
+
 // for (let i = 0; i < 5; i++) {
-//   arr[i] = Math.floor(Math.random() * 10);
-//   for (let j = 0; j < i; j++) {
-//     if (arr[i] == arr[j]) {
-//       i--;
-//     }
-//   }
-// }
-// for (let a of arr) {
-//   sum += a;
+//   z = arr.indexOf(average);
+//   console.log(z);
 // }
 
-// console.log("陣列裡的數字為 :\n" + arr + "\n");
-// console.log("排序過後：\n" + arr.sort());
-// average += Math.floor(sum / arr.length);
-
-// if (arr.indexOf(average) !== -1) {
-//   console.log("陣列元素的值等於平均值的數字:" + average);
-// } else if (arr.indexOf(average) == -1) {
-//   console.log()
-// }
+// if(d.length)
 
 //------------------ D ---------------
 
