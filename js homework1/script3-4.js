@@ -183,7 +183,11 @@ if (arr.indexOf(average) !== -1) {
     "陣列元素之值等於平均值 = " + "第" + arr.indexOf(average) + "個數"
   );
 } else if (arr.indexOf(average) == -1) {
-  console.log(arr.length);
+  for (let i = 0; i < 5; i++) {
+    if (average > arr[i]) {
+      console.log();
+    }
+  }
 }
 
 // for (let i = 0; i < 5; i++) {
