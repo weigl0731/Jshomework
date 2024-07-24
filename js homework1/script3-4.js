@@ -45,27 +45,27 @@ for (let i = 0; i < 1; i++) {
 console.log(str1);
 
 // ----------- D --------------   ok
-let nn = Math.trunc(Math.random() * 50) + 1;
+let nn = 13;
 let sum = 0;
 function isprime(a) {
-  if (a == 1) {
+  if (a <= 1) {
     return false;
   }
   for (let i = 2; i < a; i++) {
     if (a % i == 0) {
       return false;
     }
-    return true;
   }
+  return true;
 }
 
-for (let b = 2; b < n; b++) {
-  if (isprime(nn)) {
+for (let b = 2; b <= nn; b++) {
+  if (isprime(b)) {
+    console.log(`1~n的質數有${b}`);
     sum += b;
   }
 }
-console.log(`質數${nn}`);
-console.log(sum);
+console.log(`質數總和為${sum}`);
 
 // ------------- E -----------------  ok
 
@@ -147,7 +147,7 @@ for (let i = 0; i < 5; i++) {
   }
 }
 for (let a of arr1) {
-  sum += a;
+  sum1 += a;
 }
 
 console.log("陣列裡的數字為 :\n" + arr1 + "\n");
