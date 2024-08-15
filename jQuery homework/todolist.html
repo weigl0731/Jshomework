@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
       <h1>Todo List</h1>
 
       <ul class="toDoList">
+        <div>
+          <input id="selectAll" type="checkbox" />
+          <label>全選</label>
+        </div>
+
         <li class="btnadd">
+          <input class="todo_check" type="checkbox" />
           <input class="todo_add" type="text" placeholder="add something" />
-          <input class="btn_add" type="button" value="add" />
+          <input class="btn_Add" type="button" value="add" />
         </li>
 
         <!-- <li class="btngroud">
@@ -26,8 +37,3 @@
   </body>
   <script src="Todo.js"></script>
 </html>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
-  integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
-  crossorigin="anonymous"
-></script>

@@ -1,13 +1,13 @@
-let todo_add = document.querySelector(".todo_add");
-let btn_add = document.querySelector(".btn_add");
+let todo_add = $(".todo_add");
+let btn_add = $(".btn_add");
 
-let btnground = document.querySelector(".btnground");
-let btndel = document.querySelector(".btndel");
-let btnedit = document.querySelector(".btnedit");
-let TodoList = document.querySelector(".toDoList");
+let btnground = $(".btnground");
+let btndel = $(".btndel");
+let btnedit = $(".btnedit");
+let TodoList = $(".toDoList");
 
 btn_add.addEventListener("click", function () {
-  let inputvalue = todo_add.value;
+  let inputvalue = todo_add.val;
   addItem(inputvalue);
   // console.log(inputvalue);
 });
